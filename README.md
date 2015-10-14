@@ -2,6 +2,7 @@ A simple script to rename all files in a folder, and create a simple CSV file in
 
 Sample usage:
 
+~~~~
 me@banshee:~/git/blindanalysis$ ls -l /tmp/test
 total 4
 -rw-rw-r-- 1 jimbo jimbo    0 Oct 14 12:55 1.tif
@@ -30,4 +31,4 @@ me@banshee:~/git/blindanalysis$ cat /tmp/test/keyfile.csv
 "3.tif","Io5cO.tif"
 "4.tif","7icWm.tif"
 "5","CTdOD"
-
+~~~~
