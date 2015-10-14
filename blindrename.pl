@@ -23,14 +23,15 @@ if (-e "$folder/keyfile.csv") {
 }
 
 open FH, "> $folder/keyfile.csv" or die "could not open $folder/keyfile.csv for writing!\n";
+print FH '"Original Filename","Cloaked Filename"' . "\n";
 
 my @chars=("A"..."Z","a"..."z","0"..."9");
 
 foreach my $file (<$folder/*>) {
 	chomp $file;
 	my ($oldname) = $file =~ /^$folder\/(.*)$/;
-	# don't mess with keyfile.csv itself
-	if ($oldname ne 'keyfile.csv') {
+	# don't mess with keyfile.csv itself, and don't mess with directories
+	if ($oldname ne 'keyfile.csv' && ! -d $file) {
 		# separate extension from basename. be sure you handle bare basenames (no extension) properly if necessary
 		my ($ext) = $oldname =~ /^.*(\..*)$/;
 		my ($base) = $oldname =~ /^(.*)($ext)?$/;
