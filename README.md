@@ -15,9 +15,11 @@ total 24
 -rw-rw-r-- 1 me me    2 Oct 14 13:44 4.tif
 -rw-rw-r-- 1 me me    2 Oct 14 13:44 5
 drwxrwxr-x 2 me me 4096 Oct 14 12:56 subdir
+
 me@banshee:~/git/blindanalysis$ ./blindrename.pl /tmp/test
 Renaming: 1.tif... 2.tif... 3.tif... 4.tif... 5... 
 5 files successfully blind renamed; keyfile saved to /tmp/test/keyfile.csv.
+
 me@banshee:~/git/blindanalysis$ ls -l /tmp/test
 total 28
 -rw-rw-r-- 1 me me    2 Oct 14 13:44 B4LOz.tif
@@ -27,6 +29,7 @@ total 28
 -rw-rw-r-- 1 me me    2 Oct 14 13:44 Oklr1
 drwxrwxr-x 2 me me 4096 Oct 14 12:56 subdir
 -rw-rw-r-- 1 me me    2 Oct 14 13:44 wsy7e.tif
+
 me@banshee:~/git/blindanalysis$ cat /tmp/test/keyfile.csv
 "Original Filename","Cloaked Filename"
 "1.tif","kdVFM.tif"
