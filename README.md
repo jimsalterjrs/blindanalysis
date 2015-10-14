@@ -1,6 +1,6 @@
 A simple script to rename all files in a folder, and create a simple CSV file in the same folder which serves as a "key" to match the original filename to the new, randomly-generated names.  Suitable for blind analysis.
 
-There are no prerequisites or dependencies: just download it, make sure it's executable, and run it.  On Linux or BSD or Mac, I'd recommend putting it in /usr/local/bin and chmod'ing it 755, after which you can just type blindrename.pl *foldername* and it will obligingly do its thing.  On Windows... well, do whatever you need to do to run a Perl script on Windows.  (If you're a lost little scientist with only Windows: check out <a href="http://www.cygwin.com/" target="_blank">Cygwin</a> or <a href="http://www.activestate.com/activeperl" target="_blank">ActivePerl</a> for Windows implementations of Perl.)
+There are no prerequisites or dependencies beyond Perl itself: just download it, make sure it's executable, and run it.  On Linux or BSD or Mac, you should already have Perl, and I'd recommend putting it in `/usr/local/bin` and `chmod 755 /usr/local/bin/blindrename.pl`, after which you can just type **blindrename.pl** ***foldername*** and it will obligingly do its thing.  On Windows... well, do whatever you need to do to run a Perl script on Windows.  (If you're a lost little scientist with only Windows: check out <a href="http://www.cygwin.com/" target="_blank">Cygwin</a> or <a href="http://www.activestate.com/activeperl" target="_blank">ActivePerl</a> for Windows implementations of Perl.)
 
 Sample usage:
 
